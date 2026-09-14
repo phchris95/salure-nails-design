@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Salure Nails Design | Nail Designer na Freguesia do Ó, São Paulo</title>
+<meta name="description" content="Salure Nails Design — alongamento, blindagem, banho de gel e nail art na Freguesia do Ó, Zona Norte de São Paulo. Seu momento de autocuidado começa aqui. Agende pelo WhatsApp.">
+<meta name="keywords" content="nail designer São Paulo, alongamento de unhas Freguesia do Ó, esmaltação em gel Zona Norte, banho de gel São Paulo, reconstrução de unhas São Paulo">
+
+<!-- Open Graph -->
+<meta property="og:type" content="business.business">
+<meta property="og:title" content="Salure Nails Design | Seu momento de autocuidado começa aqui">
+<meta property="og:description" content="Nail designer especializada em alongamento, blindagem, banho de gel e nail art na Freguesia do Ó, São Paulo.">
+<meta property="og:locale" content="pt_BR">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💅</text></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,450;0,9..144,600;1,9..144,450&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- Schema.org LocalBusiness / BeautySalon -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BeautySalon",
+  "name": "Salure Nails Design",
+  "image": "",
+  "description": "Espaço especializado em cuidados, fortalecimento e embelezamento das unhas, com atendimento personalizado na Freguesia do Ó, São Paulo.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Rua Joana Ramalho, 25 - Freguesia do Ó",
+    "addressLocality": "São Paulo",
+    "addressRegion": "SP",
+    "addressCountry": "BR"
+  },
+  "telephone": "+5511953691565",
+  "areaServed": ["Freguesia do Ó", "Brasilândia", "Zona Norte de São Paulo"],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "08:00",
+      "closes": "18:00"
+    }
+  ],
+  "sameAs": ["https://www.instagram.com/salurenail"]
+}
+</script>
+
+<style>
+  :root{
+    --ivory:#FBF7F4;
+    --ivory-deep:#F3EBE4;
+    --wine:#6B1832;
+    --wine-deep:#4A0F22;
+    --blush:#E8C4C4;
+    --gold:#B8935A;
+    --ink:#241417;
+    --muted:#8A7268;
+    --line:#E4D5CC;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--ivory);
+    color:var(--ink);
+    font-family:'Outfit', sans-serif;
+    font-weight:400;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  h1,h2,h3,.serif{
+    font-family:'Fraunces', serif;
+    font-weight:450;
+    letter-spacing:-0.01em;
+    line-height:1.08;
+    margin:0;
+  }
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 24px;}
+  section{padding:88px 0;}
+  @media (max-width:640px){ section{padding:56px 0;} }
+
+  /* focus visibility */
+  a:focus-visible, button:focus-visible{outline:2px solid var(--wine); outline-offset:3px;}
+
+  /* ---------- Header ---------- */
+  header{
+    position:sticky; top:0; z-index:50;
+    background:rgba(251,247,244,0.92);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1180px;margin:0 auto;}
+  .brand{display:flex;align-items:center;gap:10px;font-family:'Fraunces',serif;font-size:1.3rem;color:var(--wine-deep);}
+  .brand-logo{height:30px;width:auto;flex-shrink:0;}
+  nav.menu{display:flex;gap:34px;align-items:center;}
+  nav.menu a{font-size:0.95rem;color:var(--ink);position:relative;padding:4px 0;}
+  nav.menu a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:1px;background:var(--wine);transition:width .25s ease;}
+  nav.menu a:hover::after{width:100%;}
+  .btn-cta{
+    background:var(--wine); color:var(--ivory) !important; padding:11px 22px; border-radius:100px;
+    font-size:0.92rem; white-space:nowrap; transition:background .2s ease, transform .2s ease;
+    display:inline-flex; align-items:center; gap:8px;
+  }
+  .btn-cta:hover{background:var(--wine-deep); transform:translateY(-1px);}
+  .burger{display:none;background:none;border:none;cursor:pointer;padding:8px;}
+  .burger span{display:block;width:24px;height:2px;background:var(--ink);margin:5px 0;transition:.25s;}
+  .mobile-menu{display:none;flex-direction:column;gap:2px;padding:8px 24px 20px;border-top:1px solid var(--line);}
+  .mobile-menu a{padding:12px 4px;font-size:1.02rem;border-bottom:1px solid var(--line);}
+  .mobile-menu.open{display:flex;}
+
+  @media (max-width:860px){
+    nav.menu, header .btn-cta.desktop-only{display:none;}
+    .burger{display:block;}
+  }
+
+  /* ---------- Hero ---------- */
+  .hero{position:relative;padding:70px 0 40px;overflow:hidden;}
+  .hero-grid{display:grid;grid-template-columns:1.05fr 0.95fr;gap:56px;align-items:center;}
+  @media (max-width:900px){ .hero-grid{grid-template-columns:1fr;gap:40px;} }
+  .eyebrow-tag{color:var(--wine);font-size:0.98rem;font-family:'Fraunces',serif;font-style:italic;margin-bottom:18px;display:block;}
+  .hero h1{font-size:clamp(2.5rem,5vw,3.6rem);color:var(--ink);max-width:12ch;}
+  .hero p.lead{margin:24px 0 32px;font-size:1.12rem;color:var(--muted);max-width:46ch;}
+  .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;}
+  .btn-outline{border:1px solid var(--ink);padding:11px 24px;border-radius:100px;font-size:0.95rem;transition:.2s;}
+  .btn-outline:hover{background:var(--ink);color:var(--ivory);}
+  .hero-visual{position:relative;aspect-ratio:4/5;}
+  .hero-photo{position:absolute;overflow:hidden;display:flex;align-items:center;justify-content:center;box-shadow:0 18px 40px rgba(74,15,34,0.18);}
+  .hero-photo img{width:100%;height:100%;object-fit:cover;}
+  .hero-photo-main{
+    inset:0 8% 14% 0;
+    border-radius:6% 94% 92% 8% / 10% 8% 92% 90%;
+    background:linear-gradient(160deg,var(--blush) 0%, var(--wine) 120%);
+  }
+  .hero-photo-main::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 30% 20%, rgba(255,255,255,.25), transparent 55%);pointer-events:none;}
+  .hero-photo-accent{width:42%;aspect-ratio:1/1;border-radius:16px;border:4px solid var(--ivory);background:linear-gradient(150deg,var(--ivory-deep),var(--gold) 140%);}
+  .hero-photo-accent-1{bottom:0;right:0;transform:rotate(-3deg);}
+  .hero-photo-accent-2{top:4%;right:14%;width:30%;transform:rotate(4deg);background:linear-gradient(150deg,var(--gold),var(--blush) 140%);}
+  @media (max-width:520px){ .hero-photo-accent-2{display:none;} }
+  .hero-photo-ph{display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center;padding:16px;color:rgba(255,255,255,.9);}
+  .hero-photo-main .hero-photo-ph{color:rgba(255,255,255,.92);}
+  .hero-photo-accent .hero-photo-ph{color:var(--wine-deep);opacity:.75;}
+  .hero-photo-ph svg{opacity:.85;}
+  .hero-photo-ph span{font-family:'Fraunces',serif;font-style:italic;font-size:0.82rem;line-height:1.3;max-width:14ch;}
+  .hero-photo-accent .hero-photo-ph span{font-size:0.68rem;}
+  .hero-strip{display:flex;gap:36px;margin-top:56px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:28px;}
+  .hero-strip div{font-size:0.85rem;color:var(--muted);}
+  .hero-strip strong{display:block;font-family:'Fraunces',serif;font-size:1.4rem;color:var(--wine-deep);font-weight:450;}
+
+  /* ---------- Section headings ---------- */
+  .section-head{max-width:640px;margin-bottom:48px;}
+  .section-head .kicker{color:var(--gold);font-family:'Fraunces',serif;font-style:italic;font-size:1rem;}
+  .section-head h2{font-size:clamp(1.9rem,3.4vw,2.6rem);margin-top:10px;}
+  .section-head p{color:var(--muted);margin-top:16px;font-size:1.05rem;}
+  .section-alt{background:var(--ivory-deep);}
+
+  /* ---------- Sobre ---------- */
+  .sobre-grid{display:grid;grid-template-columns:0.85fr 1.15fr;gap:64px;align-items:start;}
+  @media (max-width:860px){ .sobre-grid{grid-template-columns:1fr;gap:36px;} }
+  .sobre-img{aspect-ratio:3/4;border-radius:12px;background:linear-gradient(150deg,var(--ivory-deep),var(--blush));border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:0.9rem;text-align:center;padding:20px;}
+  .sobre-copy p{margin:0 0 18px;color:var(--ink);}
+  .sobre-copy p.muted{color:var(--muted);}
+  .diferenciais{list-style:none;margin:28px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:14px 24px;}
+  @media (max-width:520px){ .diferenciais{grid-template-columns:1fr;} }
+  .diferenciais li{display:flex;gap:10px;font-size:0.95rem;color:var(--ink);align-items:flex-start;}
+  .diferenciais li svg{flex-shrink:0;margin-top:3px;color:var(--wine);}
+
+  /* ---------- Serviços ---------- */
+  .servicos-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;}
+  @media (max-width:900px){ .servicos-grid{grid-template-columns:1fr 1fr;} }
+  @media (max-width:620px){ .servicos-grid{grid-template-columns:1fr;} }
+  .servico-card{
+    background:var(--ivory);
+    border:1px solid var(--line);
+    border-radius:22px 22px 8px 8px;
+    padding:26px 24px 24px;
+    display:flex; flex-direction:column;
+    transition:border-color .2s ease;
+  }
+  .servico-card:hover{border-color:var(--wine);}
+  .servico-cat{font-size:0.78rem;color:var(--gold);font-family:'Fraunces',serif;font-style:italic;margin-bottom:8px;}
+  .servico-card h3{font-size:1.28rem;margin-bottom:10px;color:var(--wine-deep);}
+  .servico-card p{color:var(--muted);font-size:0.93rem;margin:0 0 18px;flex-grow:1;}
+  .servico-meta{display:flex;justify-content:space-between;align-items:flex-end;border-top:1px solid var(--line);padding-top:16px;margin-top:auto;}
+  .servico-preco{font-family:'Fraunces',serif;font-size:1.35rem;color:var(--ink);}
+  .servico-preco span{font-size:0.75rem;color:var(--muted);display:block;font-family:'Outfit',sans-serif;}
+  .servico-dur{font-size:0.8rem;color:var(--muted);text-align:right;}
+  .servico-link{margin-top:16px;font-size:0.9rem;color:var(--wine);border-top:none;display:inline-flex;gap:6px;align-items:center;}
+
+  /* ---------- Portfólio ---------- */
+  .portfolio-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
+  @media (max-width:860px){ .portfolio-grid{grid-template-columns:repeat(3,1fr);} }
+  @media (max-width:560px){ .portfolio-grid{grid-template-columns:repeat(2,1fr);} }
+  .portfolio-item{
+    aspect-ratio:1/1;border-radius:10px;border:1px solid var(--line);overflow:hidden;
+    display:flex;align-items:center;justify-content:center;padding:0;margin:0;
+    background:linear-gradient(155deg,var(--ivory-deep),var(--blush) 60%,var(--wine) 140%);
+    color:rgba(255,255,255,.85);font-size:0.75rem;text-align:center;
+    cursor:default;opacity:0.9;transition:transform .2s ease,box-shadow .2s ease;
+    font-family:inherit;
+  }
+  .portfolio-item:nth-child(3n+1){background:linear-gradient(155deg,var(--blush),var(--ivory-deep) 60%);color:var(--muted);}
+  .portfolio-item:nth-child(3n+2){background:linear-gradient(155deg,var(--gold),var(--ivory-deep) 70%);color:var(--ink);}
+  .portfolio-item.has-photo{cursor:zoom-in;background:var(--ivory-deep);}
+  .portfolio-item.has-photo:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(74,15,34,0.2);}
+  .portfolio-item img{width:100%;height:100%;object-fit:cover;display:block;}
+  .portfolio-item .ph-label{padding:10px;}
+
+  /* ---------- Lightbox (visualização ampliada do portfólio) ---------- */
+  .lightbox{position:fixed;inset:0;background:rgba(36,20,23,0.92);display:none;align-items:center;justify-content:center;z-index:100;padding:32px;}
+  .lightbox.open{display:flex;}
+  .lightbox img{max-width:min(90vw,900px);max-height:85vh;border-radius:10px;box-shadow:0 20px 60px rgba(0,0,0,0.4);}
+  .lightbox-close{position:absolute;top:20px;right:20px;background:rgba(255,255,255,0.12);border:none;color:var(--ivory);width:42px;height:42px;border-radius:50%;font-size:20px;cursor:pointer;display:flex;align-items:center;justify-content:center;}
+  .lightbox-close:hover{background:rgba(255,255,255,0.22);}
+
+  /* ---------- Depoimentos ---------- */
+  .depoimentos-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;}
+  @media (max-width:860px){ .depoimentos-grid{grid-template-columns:1fr 1fr;} }
+  @media (max-width:620px){ .depoimentos-grid{grid-template-columns:1fr;} }
+  .depoimento-card{
+    background:var(--ivory);border:1px solid var(--line);border-radius:16px;
+    padding:26px 24px;display:flex;flex-direction:column;gap:14px;position:relative;
+  }
+  .depoimento-badge{
+    align-self:flex-start;font-size:0.68rem;letter-spacing:0.04em;text-transform:uppercase;
+    color:var(--muted);background:var(--ivory-deep);border:1px solid var(--line);
+    padding:3px 10px;border-radius:100px;
+  }
+  .depoimento-stars{display:flex;gap:3px;color:var(--gold);}
+  .depoimento-texto{color:var(--ink);font-family:'Fraunces',serif;font-style:italic;font-size:1.02rem;line-height:1.5;flex-grow:1;}
+  .depoimento-autor{display:flex;align-items:center;gap:10px;border-top:1px solid var(--line);padding-top:14px;}
+  .depoimento-avatar{
+    width:38px;height:38px;border-radius:50%;flex-shrink:0;
+    background:linear-gradient(150deg,var(--blush),var(--gold));
+    display:flex;align-items:center;justify-content:center;color:var(--wine-deep);
+  }
+  .depoimento-nome{font-size:0.92rem;color:var(--ink);font-weight:500;}
+
+  /* ---------- Horários & Localização ---------- */
+  .info-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;}
+  @media (max-width:860px){ .info-grid{grid-template-columns:1fr;gap:36px;} }
+  .info-block h3{font-size:1.4rem;color:var(--wine-deep);margin-bottom:20px;}
+  .horario-row{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--line);font-size:0.95rem;}
+  .horario-row.off{color:var(--muted);}
+  .info-note{margin-top:18px;font-size:0.87rem;color:var(--muted);}
+  .map-frame{border-radius:14px;overflow:hidden;border:1px solid var(--line);aspect-ratio:4/3;}
+  .map-frame iframe{width:100%;height:100%;border:0;}
+
+  /* ---------- Contato ---------- */
+  .contato-grid{display:grid;grid-template-columns:0.9fr 1.1fr;gap:56px;}
+  @media (max-width:860px){ .contato-grid{grid-template-columns:1fr;gap:36px;} }
+  .contato-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:18px;}
+  .contato-list li{display:flex;gap:14px;align-items:flex-start;font-size:0.98rem;}
+  .contato-list svg{color:var(--wine);flex-shrink:0;margin-top:3px;}
+  .form-field{margin-bottom:18px;}
+  .form-field label{display:block;font-size:0.85rem;color:var(--muted);margin-bottom:6px;}
+  .form-field input, .form-field textarea{
+    width:100%;padding:13px 14px;border:1px solid var(--line);border-radius:10px;background:var(--ivory-deep);
+    font-family:'Outfit',sans-serif;font-size:0.97rem;color:var(--ink);
+  }
+  .form-field input:focus, .form-field textarea:focus{outline:2px solid var(--wine);outline-offset:1px;background:var(--ivory);}
+  .form-field textarea{resize:vertical;min-height:110px;}
+
+  /* ---------- Footer ---------- */
+  footer{background:var(--ink);color:var(--ivory);padding:64px 0 28px;}
+  .footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:40px;}
+  @media (max-width:760px){ .footer-grid{grid-template-columns:1fr 1fr;} }
+  @media (max-width:480px){ .footer-grid{grid-template-columns:1fr;} }
+  footer h4{font-family:'Fraunces',serif;font-size:1rem;margin-bottom:16px;color:var(--blush);font-weight:450;}
+  footer .brand{color:var(--ivory);margin-bottom:14px;}
+  footer p.slogan{color:rgba(251,247,244,0.6);font-style:italic;font-family:'Fraunces',serif;font-size:0.95rem;max-width:32ch;}
+  footer ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px;}
+  footer a{color:rgba(251,247,244,0.75);font-size:0.9rem;}
+  footer a:hover{color:var(--ivory);}
+  .footer-bottom{margin-top:52px;padding-top:24px;border-top:1px solid rgba(251,247,244,0.15);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:0.8rem;color:rgba(251,247,244,0.5);}
+
+  /* WhatsApp floating button */
+  .wa-float{
+    position:fixed; bottom:22px; right:22px; z-index:60;
+    background:var(--wine); color:var(--ivory); width:58px;height:58px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center; box-shadow:0 8px 24px rgba(107,24,50,0.35);
+    transition:transform .2s ease;
+  }
+  .wa-float:hover{transform:scale(1.06);}
+
+  .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);}
+
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{transition:none !important;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a href="#home" class="brand"><img src="assets/logo.png" alt="Salure" class="brand-logo">Nails Design</a>
+    <nav class="menu">
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#portfolio">Portfólio</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <a class="btn-cta desktop-only" href="https://wa.me/5511953691565?text=Ol%C3%A1!%20Quero%20agendar%20um%20hor%C3%A1rio%20na%20Salure%20Nails%20Design." target="_blank" rel="noopener">
+      Agendar no WhatsApp
+    </a>
+    <button class="burger" id="burgerBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#sobre">Sobre</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#portfolio">Portfólio</a>
+    <a href="#depoimentos">Depoimentos</a>
+    <a href="#contato">Contato</a>
+    <a href="https://wa.me/5511953691565" target="_blank" rel="noopener" style="color:var(--wine);border-bottom:none;">Agendar no WhatsApp →</a>
+  </div>
+</header>
+
+<main id="home">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <span class="eyebrow-tag">Nail Designer · Freguesia do Ó, São Paulo</span>
+          <h1>Seu momento de autocuidado começa aqui.</h1>
+          <p class="lead">Alongamento, blindagem, banho de gel e nail art com técnica, cuidado e atenção aos detalhes — para você sair de cada atendimento se sentindo mais confiante.</p>
+          <div class="hero-ctas">
+            <a class="btn-cta" href="https://wa.me/5511953691565?text=Ol%C3%A1!%20Quero%20agendar%20um%20hor%C3%A1rio%20na%20Salure%20Nails%20Design." target="_blank" rel="noopener">
+              Agendar pelo WhatsApp
+            </a>
+            <a class="btn-outline" href="#servicos">Ver serviços</a>
+          </div>
+          <div class="hero-strip">
+            <div><strong>2020</strong>início da trajetória</div>
+            <div><strong>11+</strong>serviços especializados</div>
+            <div><strong>Dom–Sex</strong>08h às 18h</div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-photo hero-photo-main" data-hero-img="professional">
+            <div class="hero-photo-ph">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+              <span>Foto da Nail Designer</span>
+            </div>
+          </div>
+          <div class="hero-photo hero-photo-accent hero-photo-accent-1" data-hero-img="featured">
+            <div class="hero-photo-ph">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l2.4 6.6L21 11l-6.6 2.4L12 20l-2.4-6.6L3 11l6.6-2.4z"/></svg>
+              <span>Trabalho em destaque</span>
+            </div>
+          </div>
+          <div class="hero-photo hero-photo-accent hero-photo-accent-2" data-hero-img="space">
+            <div class="hero-photo-ph">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 10l9-7 9 7"/><path d="M5 9v11h14V9"/></svg>
+              <span>O espaço</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="section-alt">
+    <div class="wrap">
+      <div class="sobre-grid">
+        <div class="sobre-img" style="background:none;padding:0;"><img src="assets/anna-sallety.jpg" alt="Anna Sallety, nail designer da Salure Nails Design" style="width:100%;height:100%;object-fit:cover;border-radius:12px;"></div>
+        <div class="sobre-copy">
+          <span class="section-head kicker" style="display:block;">Nossa história</span>
+          <h2 style="margin-top:10px;font-size:clamp(1.9rem,3.4vw,2.6rem);">Do início em casa, durante a pandemia, a um espaço próprio de atendimento.</h2>
+          <p style="margin-top:22px;">A Salure Nails Design nasceu da paixão de <strong>Anna Sallety</strong> pelo universo das unhas e da busca constante por aperfeiçoamento. Mais do que oferecer serviços estéticos, o objetivo é proporcionar uma experiência acolhedora, personalizada e capaz de fortalecer a autoestima de cada cliente.</p>
+          <p class="muted">A história começou em 2020, o que era apenas uma forma de passar o tempo dentro de casa se tornou uma verdadeira paixão. Com o tempo, e muito estudo autodidata acompanhando técnicas nacionais e internacionais, Anna conquistou sua clientela e alcançou o sonho de ter seu próprio espaço de atendimento — confortável, profissional e preparado para a melhor experiência possível.</p>
+          <ul class="diferenciais">
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Atendimento personalizado e individualizado</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Ambiente confortável e acolhedor</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Técnicas inspiradas em tendências internacionais</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Foco na saúde e resistência das unhas</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Agendamento organizado, sem imprevistos</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Compromisso com qualidade e higiene</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section id="servicos">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Catálogo</span>
+        <h2>Serviços</h2>
+        <p>Cada procedimento é pensado para durabilidade, saúde da unha e um acabamento impecável. Valores e disponibilidade podem ser confirmados no agendamento.</p>
+      </div>
+      <div class="servicos-grid">
+
+        <div class="servico-card">
+          <span class="servico-cat">Reconstrução e Correção</span>
+          <h3>Reconstrução de Unhas</h3>
+          <p>Realizada com gel ou acrílico, devolve beleza e resistência a unhas danificadas ou enfraquecidas, com acabamento natural.</p>
+          <div class="servico-meta">
+            <div class="servico-preco">R$ 15<span>por unha restaurada</span></div>
+            <div class="servico-dur">30 min – 2h</div>
+          </div>
+        </div>
+
+        <div class="servico-card">
+          <span class="servico-cat">Reconstrução e Correção</span>
+          <h3>Reconstrução no Pé Completo</h3>
+          <p>Reconstrução completa das unhas dos pés, com cutilagem e esmaltação em gel ou nail art inclusas.</p>
+          <div class="servico-meta">
+            <div class="servico-preco">R$ 170<span>inclui esmaltação</span></div>
+            <div class="servico-dur">30 min – 2h</div>
+          </div>
+        </div>
+
+        <div class="servico-card">
+          <span class="servico-cat">Fortalecimento</span>
+          <h3>Blindagem de Unhas</h3>
+          <p>Camada extra de gel base para nivelamento, flexibilidade e proteção — ideal contra lascas e baixa duração do esmalte.</p>
+          <div class="servico-meta">
+            <div class="servico-preco">R$ 70 – 100<span>cutilagem inclusa</span></div>
+            <div class="servico-dur">1h – 1h30</div>
+          </div>
+        </div>
+
+        <div class="servico-card">
+          <span class="servico-cat">Manutenção Estética</span>
+          <h3>Glow Up</h3>
+          <p>Renova o brilho, troca a esmaltação em gel ou atualiza a nail art entre uma manutenção e outra. Não substitui a manutenção.</p>
+          <div class="servico-meta">
+            <div class="servico-preco">R$ 70<span>até 15 dias</span></div>
+            <div class="servico-dur">até 1h</div>
+          </div>
+        </div>
+
+        <div class="servico-card">
+          <span class="servico-cat">Pacotes Promocionais</span>
+          <h3>Pacotes de Unhas</h3>
+          <p>Combine esmaltação em gel, glow up e blindagem em mãos e pés, com mais economia e flexibilidade.</p>
+          <div class="servico-meta">
+            <div class="servico-preco">R$ 120 – 240<span>2 a 4 procedimentos</span></div>
+            <div class="servico-dur">variável</div>
+          </div>
+        </div>
+
+        <div class="servico-card">
+          <span class="servico-cat">Esmaltação</span>
+          <h3>Esmaltação em Gel</h3>
+          <p>Mais resistente que o esmalte tradicional — sem descascar ou borrar. Ideal para rotinas agitadas.</p>
+          <div class="servico-meta">
+            <div class="servico-preco">R$ 70<span>nail art inclusa</span></div>
+            <div class="servico-dur">1h – 1h30</div>
+          </div>
+        </div>
+
+        <div class="servico-card">
+          <span class="servico-cat">Fortalecimento</span>
+          <h3>Banho de Gel</h3>
+          <p>Camada de gel sobre a unha natural para prevenir quebras, com possibilidade de designs exclusivos.</p>
+          <div class="servico-meta">
+            <div class="servico-preco">R$ 120 – 150<span>encapsuladas / baby boomer</span></div>
+            <div class="servico-dur">1h30 – 2h</div>
+          </div>
+        </div>
+
+        <div class="servico-card">
+          <span class="servico-cat">Manutenção</span>
+          <h3>Banho de Gel — Manutenção</h3>
+          <p>Renovação periódica para manter resistência, brilho e acabamento das unhas naturais.</p>
+          <div class="servico-meta">
+            <div class="servico-preco">R$ 120 – 150<span>a cada 15–25 dias</span></div>
+            <div class="servico-dur">1h30 – 2h</div>
+          </div>
+        </div>
+
+        <div class="servico-card">
+          <span class="servico-cat">Alongamento</span>
+          <h3>Alongamento de Unhas</h3>
+          <p>Técnica Molde F1 ou Fibra de Vidro, em formatos como quadrado, amêndoa, stiletto ou ballerina.</p>
+          <div class="servico-meta">
+            <div class="servico-preco">R$ 170 – 200<span>encapsuladas / pedrarias</span></div>
+            <div class="servico-dur">2h – 2h30</div>
+          </div>
+        </div>
+
+        <div class="servico-card">
+          <span class="servico-cat">Manutenção</span>
+          <h3>Alongamento — Manutenção</h3>
+          <p>Correção do crescimento natural, preservando estrutura e renovando esmaltação quando necessário.</p>
+          <div class="servico-meta">
+            <div class="servico-preco">R$ 120 – 150<span>a cada 15–25 dias</span></div>
+            <div class="servico-dur">2h – 2h30</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div style="text-align:center;margin-top:48px;">
+        <a class="btn-cta" href="https://wa.me/5511953691565?text=Ol%C3%A1!%20Quero%20agendar%20um%20servi%C3%A7o%20na%20Salure%20Nails%20Design." target="_blank" rel="noopener">Agendar meu horário</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFÓLIO -->
+  <section id="portfolio" class="section-alt">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Trabalhos</span>
+        <h2>Portfólio</h2>
+        <p>Uma amostra dos atendimentos realizados por Anna Sallety — clique em qualquer foto para ampliar.</p>
+      </div>
+      <div class="portfolio-grid" id="portfolioGrid"></div>
+    </div>
+  </section>
+
+  <!-- Lightbox: abre a foto do portfólio ampliada -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Foto ampliada do portfólio">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Fechar">✕</button>
+    <img id="lightboxImg" src="" alt="">
+  </div>
+
+  <!-- DEPOIMENTOS -->
+  <section id="depoimentos">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Confiança</span>
+        <h2>O que nossas clientes dizem</h2>
+        <p>Os depoimentos abaixo são exemplos ilustrativos e serão substituídos por avaliações reais das clientes assim que estiverem disponíveis.</p>
+      </div>
+      <div class="depoimentos-grid">
+
+        <div class="depoimento-card">
+          <span class="depoimento-badge">Depoimento de exemplo</span>
+          <div class="depoimento-stars" aria-label="5 de 5 estrelas">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6L22 9.3l-5 4.6 1.4 7.1L12 17.8l-6.4 3.2L7 14l-5-4.7 7.1-.7z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6L22 9.3l-5 4.6 1.4 7.1L12 17.8l-6.4 3.2L7 14l-5-4.7 7.1-.7z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6L22 9.3l-5 4.6 1.4 7.1L12 17.8l-6.4 3.2L7 14l-5-4.7 7.1-.7z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6L22 9.3l-5 4.6 1.4 7.1L12 17.8l-6.4 3.2L7 14l-5-4.7 7.1-.7z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6L22 9.3l-5 4.6 1.4 7.1L12 17.8l-6.4 3.2L7 14l-5-4.7 7.1-.7z"/></svg>
+          </div>
+          <p class="depoimento-texto">"Espaço reservado para o comentário real desta cliente sobre o atendimento."</p>
+          <div class="depoimento-autor">
+            <span class="depoimento-avatar">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+            </span>
+            <span class="depoimento-nome">Nome da cliente</span>
+          </div>
+        </div>
+
+        <div class="depoimento-card">
+          <span class="depoimento-badge">Depoimento de exemplo</span>
+          <div class="depoimento-stars" aria-label="5 de 5 estrelas">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6L22 9.3l-5 4.6 1.4 7.1L12 17.8l-6.4 3.2L7 14l-5-4.7 7.1-.7z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6L22 9.3l-5 4.6 1.4 7.1L12 17.8l-6.4 3.2L7 14l-5-4.7 7.1-.7z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6L22 9.3l-5 4.6 1.4 7.1L12 17.8l-6.4 3.2L7 14l-5-4.7 7.1-.7z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6L22 9.3l-5 4.6 1.4 7.1L12 17.8l-6.4 3.2L7 14l-5-4.7 7.1-.7z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6L22 9.3l-5 4.6 1.4 7.1L12 17.8l-6.4 3.2L7 14l-5-4.7 7.1-.7z"/></svg>
+          </div>
+          <p class="depoimento-texto">"Espaço reservado para o comentário real desta cliente sobre o atendimento."</p>
+          <div class="depoimento-autor">
+            <span class="depoimento-avatar">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+            </span>
+            <span class="depoimento-nome">Nome da cliente</span>
+          </div>
+        </div>
+
+        <div class="depoimento-card">
+          <span class="depoimento-badge">Depoimento de exemplo</span>
+          <div class="depoimento-stars" aria-label="5 de 5 estrelas">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6L22 9.3l-5 4.6 1.4 7.1L12 17.8l-6.4 3.2L7 14l-5-4.7 7.1-.7z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6L22 9.3l-5 4.6 1.4 7.1L12 17.8l-6.4 3.2L7 14l-5-4.7 7.1-.7z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6L22 9.3l-5 4.6 1.4 7.1L12 17.8l-6.4 3.2L7 14l-5-4.7 7.1-.7z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6L22 9.3l-5 4.6 1.4 7.1L12 17.8l-6.4 3.2L7 14l-5-4.7 7.1-.7z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6L22 9.3l-5 4.6 1.4 7.1L12 17.8l-6.4 3.2L7 14l-5-4.7 7.1-.7z"/></svg>
+          </div>
+          <p class="depoimento-texto">"Espaço reservado para o comentário real desta cliente sobre o atendimento."</p>
+          <div class="depoimento-autor">
+            <span class="depoimento-avatar">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+            </span>
+            <span class="depoimento-nome">Nome da cliente</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HORÁRIOS / LOCALIZAÇÃO -->
+  <section id="info">
+    <div class="wrap">
+      <div class="info-grid">
+        <div class="info-block">
+          <h3>Horário de atendimento</h3>
+          <div class="horario-row"><span>Domingo – Sexta</span><span>08h00 – 18h00</span></div>
+          <div class="horario-row"><span>Intervalo</span><span>12h00 – 12h30</span></div>
+          <div class="horario-row off"><span>Sábado</span><span>Fechado</span></div>
+          <p class="info-note">Atendimentos fora do horário comercial são possíveis mediante consulta, sujeitos a taxa noturna de 25% sobre o valor do serviço.</p>
+          <p class="info-note">Reservas confirmadas com taxa de 25% do valor do serviço, descontada no valor final. Cancelamentos com menos de 24h de antecedência não têm reembolso da taxa.</p>
+        </div>
+        <div class="info-block">
+          <h3>Localização</h3>
+          <div class="map-frame">
+            <iframe src="https://maps.google.com/maps?q=Rua%20Joana%20Ramalho%2C%2025%2C%20Freguesia%20do%20%C3%93%2C%20S%C3%A3o%20Paulo&t=&z=15&output=embed" loading="lazy" title="Mapa Salure Nails Design"></iframe>
+          </div>
+          <p class="info-note">Rua Joana Ramalho, 25 — Freguesia do Ó, São Paulo/SP</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="section-alt">
+    <div class="wrap">
+      <div class="contato-grid">
+        <div>
+          <span class="kicker" style="color:var(--gold);font-family:'Fraunces',serif;font-style:italic;">Fale conosco</span>
+          <h2 style="margin-top:10px;font-size:clamp(1.9rem,3.4vw,2.6rem);">Contato</h2>
+          <ul class="contato-list" style="margin-top:28px;">
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+              <div>WhatsApp<br><a href="https://wa.me/5511953691565" target="_blank" rel="noopener" style="color:var(--wine);">(11) 95369-1565</a></div>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <div>Endereço<br>Rua Joana Ramalho, 25 — Freguesia do Ó, São Paulo/SP</div>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M3 10h18M8 2v4M16 2v4"/></svg>
+              <div>Atendimento<br>Domingo a sexta, 08h–18h</div>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+              <div>Instagram<br><a href="https://www.instagram.com/salurenail" target="_blank" rel="noopener" style="color:var(--wine);">@salurenail</a></div>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p style="color:var(--muted);margin-bottom:24px;font-size:0.95rem;">Prefere escrever? Preencha o formulário abaixo — sua mensagem será enviada diretamente pelo WhatsApp.</p>
+          <form id="contactForm">
+            <div class="form-field">
+              <label for="nome">Nome</label>
+              <input id="nome" name="nome" type="text" required autocomplete="name">
+            </div>
+            <div class="form-field">
+              <label for="servico">Serviço de interesse</label>
+              <input id="servico" name="servico" type="text" placeholder="Ex: Banho de gel">
+            </div>
+            <div class="form-field">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" required placeholder="Conte o que você gostaria de agendar ou saber"></textarea>
+            </div>
+            <button type="submit" class="btn-cta" style="border:none;cursor:pointer;width:100%;justify-content:center;">Enviar pelo WhatsApp</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a href="#home" class="brand" style="display:inline-flex;"><img src="assets/logo.png" alt="Salure" class="brand-logo">Nails Design</a>
+        <p class="slogan">"Seu momento de autocuidado começa aqui."</p>
+      </div>
+      <div>
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#portfolio">Portfólio</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="https://wa.me/5511953691565" target="_blank" rel="noopener">(11) 95369-1565</a></li>
+          <li><a href="https://www.instagram.com/salurenail" target="_blank" rel="noopener">@salurenail</a></li>
+          <li>Freguesia do Ó, São Paulo</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Horário</h4>
+        <ul>
+          <li>Dom – Sex: 08h–18h</li>
+          <li>Sábado: fechado</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="footerYear"></span> Salure Nails Design. Todos os direitos reservados.</span>
+      <span>Freguesia do Ó · Zona Norte de São Paulo</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5511953691565?text=Ol%C3%A1!%20Quero%20agendar%20um%20hor%C3%A1rio%20na%20Salure%20Nails%20Design." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.87.5 3.62 1.44 5.13L2 22l5.13-1.53a9.87 9.87 0 004.91 1.3h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.85 9.85 0 0012.04 2m0 1.67c2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 012.41 5.82c0 4.54-3.7 8.24-8.25 8.24a8.2 8.2 0 01-4.19-1.15l-.3-.18-3.05.91.91-2.97-.2-.31a8.18 8.18 0 01-1.26-4.37c0-4.55 3.7-8.24 8.24-8.24m-4.53 4.7c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02 0 1.19.87 2.34.99 2.5.12.16 1.7 2.6 4.13 3.63.58.25 1.03.4 1.38.51.58.19 1.11.16 1.53.1.47-.07 1.44-.59 1.64-1.16.2-.57.2-1.06.14-1.16-.06-.1-.22-.16-.46-.28-.24-.12-1.44-.71-1.66-.79-.22-.08-.39-.12-.55.12-.16.24-.63.79-.77.95-.14.16-.28.18-.52.06-.24-.12-1.01-.37-1.93-1.19-.71-.63-1.19-1.42-1.33-1.66-.14-.24-.01-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.34-.76-1.83-.2-.48-.4-.42-.55-.42h-.13z"/></svg>
+</a>
+
+<script>
+  // Ano do rodapé — sempre atual, nunca precisa de atualização manual
+  document.getElementById('footerYear').textContent = new Date().getFullYear();
+
+  // ---------------------------------------------------------------
+  // FOTOS DO HERO — para adicionar as fotos reais, preencha os
+  // caminhos abaixo (ex: 'imagens/profissional.webp'). Aceita
+  // WebP, JPG ou PNG. Enquanto estiver vazio, mostra o placeholder
+  // elegante — não precisa mexer em mais nada.
+  // ---------------------------------------------------------------
+  const HERO_IMAGES = {
+    professional: 'assets/anna-sallety.jpg', // foto da Nail Designer
+    featured: 'assets/portfolio/trabalho-05.jpg',     // foto de um trabalho em destaque
+    space: '',        // foto do espaço/estúdio
+  };
+  document.querySelectorAll('[data-hero-img]').forEach((el) => {
+    const src = HERO_IMAGES[el.dataset.heroImg];
+    if (src) {
+      el.innerHTML = `<img src="${src}" alt="" loading="eager">`;
+    }
+  });
+
+  // ---------------------------------------------------------------
+  // PORTFÓLIO — para adicionar fotos reais, preencha "src" em cada
+  // item abaixo (aceita .webp, .jpg ou .png) e escreva um "alt"
+  // descritivo. Itens sem "src" continuam aparecendo como
+  // placeholder elegante, sem precisar mudar o HTML da seção.
+  // ---------------------------------------------------------------
+  const PORTFOLIO_ITEMS = [
+    { src: 'assets/portfolio/trabalho-01.jpg', alt: 'Alongamento com esmaltação nude e detalhes em nail art' },
+    { src: 'assets/portfolio/trabalho-02.jpg', alt: 'Francesinha branca em formato amêndoa' },
+    { src: 'assets/portfolio/trabalho-03.jpg', alt: 'Esmaltação nude perolada com brilho' },
+    { src: 'assets/portfolio/trabalho-04.jpg', alt: 'Francesinha degradê com pedrarias' },
+    { src: 'assets/portfolio/trabalho-05.jpg', alt: 'Francesinha degradê com pedrarias — trabalho em destaque' },
+    { src: 'assets/portfolio/trabalho-06.jpg', alt: 'Alongamento stiletto em degradê rosa e vermelho' },
+    { src: 'assets/portfolio/trabalho-07.jpg', alt: 'Nail art animal print com detalhes dourados' },
+    { src: 'assets/portfolio/trabalho-08.jpg', alt: 'Nail art animal print em ambas as mãos' },
+    { src: 'assets/portfolio/trabalho-09.jpg', alt: 'Esmaltação vermelha com nail art colorida em destaque' },
+    { src: 'assets/portfolio/trabalho-10.jpg', alt: 'Esmaltação azul metálica com efeito marmorizado' },
+    { src: 'assets/portfolio/trabalho-11.jpg', alt: 'Francesinha dourada com nail art floral 3D' },
+    { src: 'assets/portfolio/trabalho-12.jpg', alt: 'Francesinha branca clássica com pedrarias' },
+    { src: 'assets/portfolio/trabalho-13.jpg', alt: 'Alongamento stiletto com glitter prateado degradê' },
+    { src: 'assets/portfolio/trabalho-14.jpg', alt: 'Esmaltação caramelo com folha dourada e nail art floral' },
+    { src: 'assets/portfolio/trabalho-15.jpg', alt: 'Esmaltação caramelo com detalhes dourados' },
+    { src: 'assets/portfolio/trabalho-16.jpg', alt: 'Esmaltação caramelo com nail art floral delicada' },
+    { src: 'assets/portfolio/trabalho-17.jpg', alt: 'Francesinha branca com laço e charms de cereja' },
+    { src: 'assets/portfolio/trabalho-18.jpg', alt: 'Nail art vinho com flores 3D e glitter' },
+    { src: 'assets/portfolio/trabalho-19.jpg', alt: 'Nail art vinho com flores 3D — close-up' },
+    { src: 'assets/portfolio/trabalho-20.jpg', alt: 'Esmaltação rosa holográfica com glitter' },
+    { src: 'assets/portfolio/trabalho-21.jpg', alt: 'Nail art delicada com flores e glitter dourado' },
+  ];
+
+  const portfolioGrid = document.getElementById('portfolioGrid');
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightboxImg');
+
+  function openLightbox(src, alt) {
+    lightboxImg.src = src;
+    lightboxImg.alt = alt;
+    lightbox.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeLightbox() {
+    lightbox.classList.remove('open');
+    document.body.style.overflow = '';
+    lightboxImg.src = '';
+  }
+  document.getElementById('lightboxClose').addEventListener('click', closeLightbox);
+  lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLightbox(); });
+
+  PORTFOLIO_ITEMS.forEach((item, i) => {
+    const el = document.createElement(item.src ? 'button' : 'div');
+    el.className = 'portfolio-item' + (item.src ? ' has-photo' : '');
+    if (item.src) {
+      el.type = 'button';
+      el.setAttribute('aria-label', `Ampliar foto: ${item.alt}`);
+      el.innerHTML = `<img src="${item.src}" alt="${item.alt}" loading="lazy">`;
+      el.addEventListener('click', () => openLightbox(item.src, item.alt));
+    } else {
+      el.innerHTML = `<span class="ph-label">Foto do trabalho ${i + 1}</span>`;
+    }
+    portfolioGrid.appendChild(el);
+  });
+
+  // Mobile menu toggle
+  const burgerBtn = document.getElementById('burgerBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  burgerBtn.addEventListener('click', () => {
+    const isOpen = mobileMenu.classList.toggle('open');
+    burgerBtn.setAttribute('aria-expanded', isOpen);
+  });
+  mobileMenu.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+      burgerBtn.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  // Contact form -> WhatsApp
+  document.getElementById('contactForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    const nome = document.getElementById('nome').value.trim();
+    const servico = document.getElementById('servico').value.trim();
+    const mensagem = document.getElementById('mensagem').value.trim();
+    let text = `Olá! Meu nome é ${nome}.`;
+    if (servico) text += ` Tenho interesse em: ${servico}.`;
+    text += ` ${mensagem}`;
+    const url = `https://wa.me/5511953691565?text=${encodeURIComponent(text)}`;
+    window.open(url, '_blank', 'noopener');
+  });
+</script>
+
+</body>
+</html>
